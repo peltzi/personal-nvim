@@ -114,6 +114,11 @@ command! -bang -nargs=* Rg
 " Exit Neovim terminal with simple keybinding
 tnoremap <C-w> <C-\><C-n>
 
+" Force from filetypedetect, for example Makefile.toml case
+augroup filetypedetect
+    au BufRead,BufNewFile *.toml set filetype=toml
+augroup END
+
 """ Below settings required by Coc.nvim
 
 " TextEdit might fail if hidden is not set.
