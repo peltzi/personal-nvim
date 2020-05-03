@@ -1,0 +1,5 @@
+{
+  "diagnostic.virtualText": true,
+  "rust-analyzer.updates.channel": "nightly",
+  "rust-analyzer.inlayHints.chainingHints": true
+}
